@@ -33,15 +33,7 @@ npm run start
 6.若想針對專案進行開發人員測試
 ```
 npm run 
-<<<<<<< HEAD
 ```
 ## 補充說明
 - 使用handlebars if/else 判斷 KEYWORD
-<<<<<<< HEAD
 - Search 為 null  ,重新載入頁面(※以後修改成部分重新載入)
-=======
-- Search 為 null  ,重新載入頁面(※以後修改成部分重新載入)
-
->>>>>>> ae052eecb8c6ae24f33fa9829dba0cecc9f07a91
-=======
->>>>>>> f6fa8fc31c05641ae29f088eea999fdff4416e7f
