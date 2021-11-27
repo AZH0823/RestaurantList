@@ -32,7 +32,7 @@ npm run start
 ```
 6.若想針對專案進行開發人員測試
 ```
-npm run 
+npm run dev
 ```
 ## 補充說明
 - 使用handlebars if/else 判斷 KEYWORD
