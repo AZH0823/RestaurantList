@@ -3,9 +3,9 @@
 
 ## 畫面呈現
 ### 首頁
-![image](https://raw.githubusercontent.com/AZH0823/RrestaurantList/master/Cover/Capture_img01.jpg)
+![image](https://raw.githubusercontent.com/AZH0823/RrestaurantList/master/Cover/Capture_img03.jpg)
 ### 詳細頁面
-![image](https://github.com/AZH0823/RrestaurantList/blob/master/Cover/Capture_img02.jpg?raw=true)
+![image](https://raw.githubusercontent.com/AZH0823/RestaurantList/master/Cover/Capture_img02.jpg)
 
 ## 功能
 - 使用者能查看所有餐廳訊息
@@ -16,7 +16,7 @@
 1. 請先確認是否安裝 Node.js
 2. 打開終端機並複製到本機電腦
 ```
-https://github.com/Phiphi0912/Restaurant_list.git
+https://github.com/AZH0823/RestaurantList.git
 ```
 3.進入專案資料夾
 ```
@@ -33,3 +33,15 @@ npm run start
 6.若想針對專案進行開發人員測試
 ```
 npm run 
+<<<<<<< HEAD
+```
+## 補充說明
+- 使用handlebars if/else 判斷 KEYWORD
+<<<<<<< HEAD
+- Search 為 null  ,重新載入頁面(※以後修改成部分重新載入)
+=======
+- Search 為 null  ,重新載入頁面(※以後修改成部分重新載入)
+
+>>>>>>> ae052eecb8c6ae24f33fa9829dba0cecc9f07a91
+=======
+>>>>>>> f6fa8fc31c05641ae29f088eea999fdff4416e7f
