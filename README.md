@@ -3,9 +3,9 @@
 
 ## 畫面呈現
 ### 首頁
-![Homepage](/Cover/Capture_img01.JPG)
+![image](https://raw.githubusercontent.com/AZH0823/RrestaurantList/master/Cover/Capture_img01.jpg)
 ### 詳細頁面
-![Homepage](/Cover/Capture_img02.JPG)
+![image](https://github.com/AZH0823/RrestaurantList/blob/master/Cover/Capture_img02.jpg?raw=true)
 
 ## 功能
 - 使用者能查看所有餐廳訊息
