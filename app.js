@@ -54,22 +54,22 @@ app.get('/', (req, res) => {
 //Show 餐廳的詳細資料
 app.get('/restaurants/:id', (req, res) => {
   // console.log("this id : ", req.params.id)
-  const getID = req.params.id //取得餐廳 Req 來的 ID 編號
+  const restaurantId = req.params.id //取得餐廳 Req 來的 ID 編號
 
   //一筆資料 只會有相對應一筆 ID
-  const resInfo = myResList.results.find(resInfo => resInfo.id === Number(getID))
+  const resInfo = myResList.results.find(resInfo => resInfo.id === Number(restaurantId))
   // 顯示showDetails 頁面資訊
   res.render('showDetails', { showID: resInfo })
 
   // 檢查點進餐廳後是否有切換相對應Router 及 內容
-  // res.send(`hello from Show restaurant info : ${getID}`)
+  // res.send(`hello from Show restaurant info : ${restaurantId}`)
 })
 
 //Show 您所輸入的關鍵字 
 app.get('/search', (req, res) => {
   // 與 index.handlebars name="keyword"
   // console.log(req.query)
-  let keyWord = req.query.keyword.trim() // 存所查詢的關鍵字
+  let keyWord = req.query.keyword.trim().toLocaleLowerCase() // 存所查詢的關鍵字
   if (!keyWord) {
     console.log('沒有輸入值')
     // keyWord = `沒有輸入值`
@@ -79,7 +79,8 @@ app.get('/search', (req, res) => {
 
   // 存放符合關鍵字的餐廳清單。清單並不會只有1間; 所以使用filter
   const searchResLInfo = myResList.results.filter(resInfo =>
-    resInfo.name.toLocaleLowerCase().includes(keyWord.toLocaleLowerCase())
+    resInfo.name.toLocaleLowerCase().includes(keyWord) ||
+    resInfo.category.toLowerCase().includes(keyWord)
   )
 
   // console.log(searchResLInfo)
